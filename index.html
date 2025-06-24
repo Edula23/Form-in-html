@@ -3,22 +3,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <style>
+        label{
+            display: block;
+            margin-bottom: 8px;
+        }
+    </style>
 </head>
 <body>
-    <section>
+    <form action="success.html" method="get">
+        <fieldset>
         <h1>Application Form</h1>
         <label for="first_name">First name:
             <input type="text" name="first_name" id="first_name" required  
                    placeholder="Enter your first name" />
-
         </label>
+        
         <label for="last_name">Last name:
             <input type="text" name="last_name" id="last_name" required  
                    placeholder="Enter your last name" />
         </label>
+        
         <label for="email">Email:
             <input type="email" name="email" id="email" required  
-                   placeholder="Enter your email address" />
+                   placeholder="Enter your email address" /></label>
+        
+        <label for="birth_date">Birth date:
+            <input type="date" name="birth_date" id="birth_date" required  
+                   >
+        </label>
+        
+        <label for="gender">gender:
+            <select name="gender" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </label>
     </section>
+    <p>Position Available</p>
+    <label for="jun-dev">
+        <input type="radio" name="position" id="jun-dev" value="Junior" required>Junior Developer
+    </label>
+    
+    <label for="mid-dev">
+        <input type="radio" name="position" id="mid-dev" value="Mid-Level" required>Mid-Level Developer
+    </label>
+    
+    <label for="Sen-dev">
+        <input type="radio" name="position" id="Sen-dev" value="Senior-Level" required>Senior Developer
+    </label>
+    <p>Programming Languages</p>
+    <label for="java">
+        <input type="checkbox" name="Languages" id="java" value="Java" >Java
+    </label>
+    <label for="javaScript">
+        <input type="checkbox" name="Languages" id="javaScript" value="JavaScript" >JavaScript
+    </label>
+    <label for="python">
+        <input type="checkbox" name="Languages" id="python" value="python" >Python
+    </label>
+    
+    <label for="password">Password
+        <input type="password" name="password" id="password" required>
+    </label>
+    <label for="password">Confirm Password
+        <input type="password" name="password" id="password" required>
+    </label>
+    <button type="submit">Submit</button>
+    </fieldset>
+    </form>
 </body>
 </html>
